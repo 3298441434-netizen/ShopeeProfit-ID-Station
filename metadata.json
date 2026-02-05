@@ -1,0 +1,5 @@
+{
+  "name": "ShopeeProfit ID Station",
+  "description": "印尼 Shopee 利润计算器，支持订单、广告及成本库导入，自动估算印尼平台扣费并计算人民币净利润。",
+  "requestFramePermissions": []
+}

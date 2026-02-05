@@ -1,0 +1,45 @@
+{
+  "name": "shopeeprofit-id-station",
+  "version": "1.0.0",
+  "description": "Shopee Indonesia Profit Calculator (ID Only)",
+  "type": "module",
+  "main": "main.cjs",
+  "author": "ShopeeProfit Team",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "dist:dir": "electron-builder --win --dir",
+    "dist": "vite build && electron-builder --win --dir"
+  },
+  "build": {
+    "appId": "com.shopeeprofit.id",
+    "productName": "ShopeeProfit ID Station",
+    "copyright": "Copyright © 2024 ShopeeProfit",
+    "directories": {
+      "output": "release"
+    },
+    "files": [
+      "dist/**/*",
+      "main.cjs"
+    ],
+    "asar": true,
+    "win": {
+      "target": [
+        "dir"
+      ]
+    }
+  },
+  "dependencies": {
+    "lucide-react": "^0.562.0",
+    "react": "^19.2.3",
+    "react-dom": "^19.2.3",
+    "xlsx": "^0.18.5"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-react": "^5.1.2",
+    "electron": "^31.0.0",
+    "electron-builder": "^24.13.3",
+    "vite": "^5.0.0"
+  }
+}
