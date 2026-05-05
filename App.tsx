@@ -289,7 +289,18 @@ const App: React.FC = () => {
           </div>
         </header>
 
+
         <div className="flex-1 overflow-auto p-6">
+          {calculatedData.length === 0 && (
+            <div className="mb-6 rounded-2xl border border-dashed border-orange-300 bg-orange-50/50 p-5">
+              <h3 className="text-sm font-bold text-orange-700 mb-2">快速开始：3 步完成 Shopee 利润分析</h3>
+              <ol className="list-decimal ml-5 text-xs text-orange-700/90 space-y-1">
+                <li>先导入 Shopee 订单明细（.xlsx / .csv）。</li>
+                <li>再导入广告报表与 SKU 成本库（RMB）。</li>
+                <li>在左侧调整汇率与费率，查看最终净利润和订单级利润率。</li>
+              </ol>
+            </div>
+          )}
           <div className="bg-white rounded-2xl border border-slate-200 shadow-sm overflow-hidden flex flex-col">
             <div className="px-6 py-4 bg-slate-50/50 border-b border-slate-200 flex justify-between items-center shrink-0">
               <h3 className="font-bold text-slate-700 flex items-center gap-2"><TableIcon size={16} className="text-orange-500" /> 订单明细统计 ({calculatedData.length})</h3>
