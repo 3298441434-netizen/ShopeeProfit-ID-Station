@@ -1,20 +1,37 @@
-<div align="center">
-<img width="1200" height="475" alt="GHBanner" src="https://github.com/user-attachments/assets/0aa67016-6eaf-458a-adb2-6e31a0763ed6" />
-</div>
+# 每日热量计算器
 
-# Run and deploy your AI Studio app
+一个使用 **React + Vite** 开发的中文热量记录工具，支持记录食物名称、重量、热量、蛋白质、碳水、脂肪，并自动统计今日总摄入。数据保存在浏览器 `localStorage`。
 
-This contains everything you need to run your app locally.
+## 功能
 
-View your app in AI Studio: https://ai.studio/apps/drive/1rF7VhraJitpAtdep-QTmpV96Zo12ujdQ
+- 中文界面，移动端优先适配
+- 输入食物名称、重量、热量
+- 输入三大营养素：蛋白质 / 碳水 / 脂肪
+- 自动汇总今日总热量和三大营养素
+- 数据本地持久化（localStorage）
 
-## Run Locally
+## 本地运行
 
-**Prerequisites:**  Node.js
+1. 安装依赖
 
+```bash
+npm install
+```
 
-1. Install dependencies:
-   `npm install`
-2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
-3. Run the app:
-   `npm run dev`
+2. 启动开发环境
+
+```bash
+npm run dev
+```
+
+3. 打开浏览器访问（默认）：
+
+```text
+http://localhost:3000
+```
+
+## 打包
+
+```bash
+npm run build
+```
